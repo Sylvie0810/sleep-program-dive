@@ -19,10 +19,8 @@ const CTASection = () => {
         </p>
         
         {/* CTA Button */}
-        <Button variant="warm" size="xl" className="group mb-8 w-full sm:w-auto">
-          <Cloud className="w-5 h-5" />
+        <Button variant="warm" size="lg" className="w-full sm:w-56 transition-transform duration-200 hover:scale-105 mb-8">
           수면건강 체크 시작하기
-          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </Button>
 
         {/* Footer note */}
