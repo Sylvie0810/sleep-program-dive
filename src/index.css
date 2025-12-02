@@ -41,6 +41,7 @@
     --warm-peach: 15 50% 92%;
     --warm-coral: 15 70% 70%;
     --warm-lavender: 270 40% 85%;
+    --warm-blue: 210 50% 88%;
     --warm-mint: 200 30% 88%;
     --warm-yellow: 55 70% 80%;
     --warm-orange: 25 70% 65%;
@@ -92,6 +93,7 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    word-break: keep-all;
   }
 }
 

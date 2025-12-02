@@ -55,6 +55,7 @@ export default {
           peach: "hsl(var(--warm-peach))",
           coral: "hsl(var(--warm-coral))",
           lavender: "hsl(var(--warm-lavender))",
+          blue: "hsl(var(--warm-blue))",
           mint: "hsl(var(--warm-mint))",
           yellow: "hsl(var(--warm-yellow))",
           orange: "hsl(var(--warm-orange))",
