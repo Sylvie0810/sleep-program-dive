@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['NanumSquareRound', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+        sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
