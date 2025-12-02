@@ -16,6 +16,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground rounded-xl",
         link: "text-primary underline-offset-4 hover:underline",
         warm: "bg-primary text-primary-foreground rounded-full shadow-lg hover:shadow-xl hover:scale-105 active:scale-95",
+        coral: "bg-[hsl(15_60%_65%)] text-white rounded-full shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 hover:bg-[hsl(15_60%_60%)]",
       },
       size: {
         default: "h-11 px-6 py-2",
