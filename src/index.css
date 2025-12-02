@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 20% 20%;
 
-    --primary: 250 50% 55%;
+    --primary: 230 45% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 250 30% 95%;
-    --secondary-foreground: 250 30% 25%;
+    --secondary: 230 30% 95%;
+    --secondary-foreground: 230 30% 25%;
 
-    --muted: 250 20% 94%;
-    --muted-foreground: 250 15% 45%;
+    --muted: 230 20% 94%;
+    --muted-foreground: 230 15% 45%;
 
-    --accent: 250 40% 70%;
+    --accent: 230 35% 70%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,19 +32,24 @@
 
     --border: 30 20% 90%;
     --input: 30 20% 90%;
-    --ring: 250 50% 55%;
+    --ring: 230 45% 55%;
 
     --radius: 1.5rem;
 
-    /* Soft lavender palette matching illustration */
-    --warm-cream: 40 30% 97%;
-    --warm-peach: 250 30% 92%;
-    --warm-coral: 250 40% 70%;
-    --warm-lavender: 250 35% 85%;
-    --warm-mint: 250 25% 90%;
-    --warm-yellow: 45 60% 85%;
-    --warm-orange: 25 70% 70%;
-    --warm-teal: 250 50% 55%;
+    /* Warm blue-purple palette */
+    --warm-cream: 230 25% 97%;
+    --warm-peach: 230 30% 92%;
+    --warm-coral: 230 35% 70%;
+    --warm-lavender: 230 30% 85%;
+    --warm-mint: 220 25% 90%;
+    --warm-yellow: 45 50% 88%;
+    --warm-orange: 25 60% 75%;
+    --warm-teal: 230 45% 55%;
+
+    /* Sleep cycle colors */
+    --sleep-deep: 230 45% 50%;
+    --sleep-rem: 260 35% 65%;
+    --sleep-light: 220 30% 75%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -119,6 +124,18 @@
     animation: pulseSoft 3s ease-in-out infinite;
   }
 
+  .animate-sleep-wave {
+    animation: sleepWave 8s ease-in-out infinite;
+  }
+
+  .animate-sleep-wave-reverse {
+    animation: sleepWaveReverse 6s ease-in-out infinite;
+  }
+
+  .animate-sleep-wave-slow {
+    animation: sleepWave 12s ease-in-out infinite;
+  }
+
   .delay-100 { animation-delay: 0.1s; }
   .delay-200 { animation-delay: 0.2s; }
   .delay-300 { animation-delay: 0.3s; }
@@ -149,4 +166,38 @@
 @keyframes pulseSoft {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.8; transform: scale(0.98); }
+}
+
+@keyframes sleepWave {
+  0%, 100% { 
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  25% { 
+    transform: translateY(-8px) translateX(5px);
+    opacity: 0.5;
+  }
+  50% { 
+    transform: translateY(5px) translateX(-3px);
+    opacity: 0.4;
+  }
+  75% { 
+    transform: translateY(-3px) translateX(8px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes sleepWaveReverse {
+  0%, 100% { 
+    transform: translateY(0) translateX(0);
+    opacity: 0.25;
+  }
+  33% { 
+    transform: translateY(6px) translateX(-5px);
+    opacity: 0.4;
+  }
+  66% { 
+    transform: translateY(-6px) translateX(5px);
+    opacity: 0.35;
+  }
 }
