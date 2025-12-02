@@ -96,7 +96,7 @@ const HeroSection = () => {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Link to="/sleep-strategy">
-              <Button variant="outline" size="lg" className="group">
+              <Button variant="coral" size="lg" className="group">
                 <BookOpen className="w-4 h-4" />
                 24시간 수면 전략
               </Button>
