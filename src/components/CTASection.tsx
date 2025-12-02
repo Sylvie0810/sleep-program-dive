@@ -25,9 +25,7 @@ const CTASection = () => {
 
         {/* Footer note */}
         <p className="text-xs text-muted-foreground">
-          본 프로그램은 Bayer 임직원 전용으로,
-          <br />
-          K-SleepCare의 전문 분석 서비스를 통해 진행됩니다.
+          본 프로그램은 Bayer 임직원 전용으로, K-SleepCare 서비스를 통해 진행됩니다.
         </p>
       </div>
     </section>
