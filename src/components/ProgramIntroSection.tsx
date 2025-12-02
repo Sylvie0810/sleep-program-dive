@@ -1,13 +1,9 @@
 import { Clock, FileText, Sparkles } from "lucide-react";
-
 const ProgramIntroSection = () => {
-  return (
-    <section className="py-12 md:py-16 px-4 md:px-6 bg-warm-cream/30">
+  return <section className="py-12 md:py-16 px-4 md:px-6 bg-warm-cream/30">
       <div className="max-w-3xl mx-auto text-center">
         {/* Headline */}
-        <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-          "좋은 하루의 시작은, 잘 잔 밤에서 옵니다."
-        </h2>
+        <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">"좋은 하루의 시작은, 잘 잔 밤에서 옵니다."</h2>
         
         {/* Body */}
         <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -37,8 +33,6 @@ const ProgramIntroSection = () => {
           "나의 회복 루틴을 과학적으로 확인하는 시간"
         </p>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ProgramIntroSection;
