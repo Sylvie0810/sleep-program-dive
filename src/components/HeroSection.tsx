@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import familyIllustration from "@/assets/happy-family.png";
 import bayerLogo from "@/assets/bayer-logo.png";
 const BottomWave = () => {
@@ -65,11 +64,6 @@ const HeroSection = () => {
             >
               프로그램 혜택
             </Button>
-            <Link to="/sleep-strategy" className="w-full sm:w-56">
-              <Button variant="secondary" size="lg" className="w-full bg-warm-coral hover:bg-warm-coral/90 text-white transition-transform duration-200 hover:scale-105">
-                24시간 수면 전략
-              </Button>
-            </Link>
           </div>
         </div>
       </div>

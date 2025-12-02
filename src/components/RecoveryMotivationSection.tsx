@@ -1,4 +1,6 @@
 import { Sunrise, Sun, Moon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const goals = [
   {
@@ -56,6 +58,15 @@ const RecoveryMotivationSection = () => {
         <p className="text-xs text-muted-foreground mt-6">
           2025년 12월 2일 하루 간 설문 완료하신 57분의 의견
         </p>
+
+        {/* CTA Button */}
+        <div className="flex justify-center mt-8">
+          <Link to="/sleep-strategy">
+            <Button variant="secondary" size="lg" className="w-full sm:w-56 bg-warm-coral hover:bg-warm-coral/90 text-white transition-transform duration-200 hover:scale-105">
+              24시간 수면 전략
+            </Button>
+          </Link>
+        </div>
       </div>
     </section>
   );
