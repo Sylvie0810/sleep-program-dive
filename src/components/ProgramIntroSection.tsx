@@ -2,7 +2,7 @@ import { Clock, FileText, Sparkles } from "lucide-react";
 
 const ProgramIntroSection = () => {
   return (
-    <section className="py-16 px-6 bg-warm-cream/30">
+    <section className="py-12 md:py-16 px-4 md:px-6 bg-warm-cream/30">
       <div className="max-w-3xl mx-auto text-center">
         {/* Headline */}
         <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">

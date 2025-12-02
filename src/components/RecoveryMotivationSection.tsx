@@ -40,13 +40,13 @@ const RecoveryMotivationSection = () => {
         </p>
 
         {/* Goal Cards */}
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 md:gap-4">
           {goals.map((goal, index) => (
             <div
               key={index}
-              className={`${goal.color} rounded-2xl px-6 py-4 flex items-center gap-3 transition-transform hover:scale-105`}
+              className={`${goal.color} rounded-2xl px-5 py-3 md:px-6 md:py-4 flex items-center gap-3 transition-transform hover:scale-105`}
             >
-              <goal.icon className={`w-6 h-6 ${goal.iconColor}`} />
+              <goal.icon className={`w-5 h-5 md:w-6 md:h-6 ${goal.iconColor}`} />
               <span className="text-sm font-medium text-foreground">{goal.text}</span>
             </div>
           ))}

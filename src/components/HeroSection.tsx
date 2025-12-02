@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cloud } from "lucide-react";
+import { ArrowRight, Cloud, BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 import familyIllustration from "@/assets/happy-family.png";
 import bayerLogo from "@/assets/bayer-logo.png";
 
@@ -80,13 +81,19 @@ const HeroSection = () => {
             올해의 마지막 복지는, '잘 자는 밤'입니다.
           </p>
 
-          {/* CTA Button */}
-          <div className="animate-fade-up delay-400 flex flex-col sm:flex-row gap-3 items-center md:items-start">
-            <Button variant="warm" size="lg" className="group">
+          {/* CTA Buttons */}
+          <div className="animate-fade-up delay-400 flex flex-col sm:flex-row gap-3 items-center lg:items-start">
+            <Button variant="warm" size="lg" className="group w-full sm:w-auto">
               <Cloud className="w-4 h-4" />
               수면건강 체크 시작하기
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
+            <Link to="/sleep-strategy">
+              <Button variant="outline" size="lg" className="group w-full sm:w-auto">
+                <BookOpen className="w-4 h-4" />
+                24시간 수면 전략
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
