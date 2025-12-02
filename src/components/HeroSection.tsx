@@ -2,21 +2,62 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import sleepIllustration from "@/assets/sleep-illustration.png";
 
+const SleepCycleWave = () => {
+  return (
+    <svg 
+      className="absolute inset-0 w-full h-full opacity-30"
+      viewBox="0 0 400 300" 
+      preserveAspectRatio="xMidYMid slice"
+    >
+      {/* Deep sleep wave */}
+      <path
+        d="M0,150 Q50,120 100,180 T200,140 T300,190 T400,150"
+        fill="none"
+        stroke="hsl(var(--sleep-deep))"
+        strokeWidth="3"
+        className="animate-sleep-wave"
+        strokeLinecap="round"
+      />
+      {/* REM sleep wave */}
+      <path
+        d="M0,130 Q50,160 100,110 T200,150 T300,100 T400,140"
+        fill="none"
+        stroke="hsl(var(--sleep-rem))"
+        strokeWidth="2"
+        className="animate-sleep-wave-reverse"
+        strokeLinecap="round"
+        strokeDasharray="8 4"
+      />
+      {/* Light sleep wave */}
+      <path
+        d="M0,170 Q50,140 100,160 T200,130 T300,170 T400,145"
+        fill="none"
+        stroke="hsl(var(--sleep-light))"
+        strokeWidth="2"
+        className="animate-sleep-wave-slow"
+        strokeLinecap="round"
+        opacity="0.7"
+      />
+    </svg>
+  );
+};
+
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-warm-gradient px-6">
       {/* Decorative shapes */}
-      <div className="absolute top-20 left-[10%] w-24 h-24 rounded-full bg-warm-lavender animate-float opacity-60" />
-      <div className="absolute top-40 right-[15%] w-16 h-16 rounded-full bg-warm-mint animate-float delay-200 opacity-60" />
-      <div className="absolute bottom-32 left-[20%] w-20 h-20 rounded-full bg-warm-yellow animate-float delay-300 opacity-50" />
-      <div className="absolute bottom-48 right-[10%] w-12 h-12 rounded-full bg-warm-peach animate-float delay-100 opacity-70" />
+      <div className="absolute top-20 left-[10%] w-24 h-24 rounded-full bg-warm-lavender animate-float opacity-40" />
+      <div className="absolute top-40 right-[15%] w-16 h-16 rounded-full bg-warm-mint animate-float delay-200 opacity-40" />
+      <div className="absolute bottom-32 left-[20%] w-20 h-20 rounded-full bg-warm-yellow animate-float delay-300 opacity-30" />
+      <div className="absolute bottom-48 right-[10%] w-12 h-12 rounded-full bg-warm-peach animate-float delay-100 opacity-50" />
       
-      {/* Main illustration */}
-      <div className="animate-fade-up relative mb-6 w-full max-w-sm mx-auto">
+      {/* Main illustration with sleep cycle animation */}
+      <div className="animate-fade-up relative mb-6 w-full max-w-xs mx-auto">
+        <SleepCycleWave />
         <img 
           src={sleepIllustration} 
           alt="편안하게 잠자는 모습" 
-          className="w-full h-auto rounded-3xl"
+          className="w-full h-auto rounded-3xl relative z-10"
         />
       </div>
 
