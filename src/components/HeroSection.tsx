@@ -2,38 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import familyIllustration from "@/assets/happy-family.png";
 import bayerLogo from "@/assets/bayer-logo.png";
-
 const BottomWave = () => {
-  return (
-    <div className="absolute bottom-0 left-0 right-0 h-32 overflow-hidden">
-      <svg 
-        className="absolute bottom-0 w-full h-full"
-        viewBox="0 0 1440 200" 
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M0,80 C240,140 480,20 720,80 C960,140 1200,20 1440,80 L1440,200 L0,200 Z"
-          fill="hsl(270 40% 85% / 0.35)"
-          className="animate-wave"
-        />
-        <path
-          d="M0,120 C240,60 480,180 720,120 C960,60 1200,180 1440,120 L1440,200 L0,200 Z"
-          fill="hsl(210 50% 80% / 0.3)"
-          className="animate-wave-slow"
-        />
-        <path
-          d="M0,160 C240,200 480,120 720,160 C960,200 1200,120 1440,160 L1440,200 L0,200 Z"
-          fill="hsl(15 70% 75% / 0.25)"
-          className="animate-wave-slower"
-        />
+  return <div className="absolute bottom-0 left-0 right-0 h-32 overflow-hidden">
+      <svg className="absolute bottom-0 w-full h-full" viewBox="0 0 1440 200" preserveAspectRatio="none">
+        <path d="M0,80 C240,140 480,20 720,80 C960,140 1200,20 1440,80 L1440,200 L0,200 Z" fill="hsl(270 40% 85% / 0.35)" className="animate-wave" />
+        <path d="M0,120 C240,60 480,180 720,120 C960,60 1200,180 1440,120 L1440,200 L0,200 Z" fill="hsl(210 50% 80% / 0.3)" className="animate-wave-slow" />
+        <path d="M0,160 C240,200 480,120 720,160 C960,200 1200,120 1440,160 L1440,200 L0,200 Z" fill="hsl(15 70% 75% / 0.25)" className="animate-wave-slower" />
       </svg>
-    </div>
-  );
+    </div>;
 };
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-background px-6 py-12">
+  return <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-background px-6 py-12">
       {/* Bayer Logo */}
       <div className="absolute top-4 left-4 animate-fade-up">
         <img src={bayerLogo} alt="Bayer" className="h-10 w-auto" />
@@ -49,18 +28,14 @@ const HeroSection = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 w-full max-w-6xl mx-auto">
         {/* Illustration */}
         <div className="animate-fade-up flex-shrink-0">
-          <img 
-            src={familyIllustration} 
-            alt="건강한 일상" 
-            className="w-[220px] md:w-[280px] lg:w-[320px] h-auto"
-          />
+          <img src={familyIllustration} alt="건강한 일상" className="w-[220px] md:w-[280px] lg:w-[320px] h-auto" />
         </div>
 
         {/* Content */}
         <div className="relative z-10 text-center lg:text-left flex-1 max-w-xl">
           {/* Badge */}
           <div className="animate-fade-up delay-100 inline-flex items-center gap-2 bg-muted rounded-full px-3 py-1.5 mb-4">
-            <span className="text-xs font-medium text-foreground/80">Bayer Sleep Health Program x K-SleepCare</span>
+            <span className="text-xs font-medium text-foreground/80">Bayer Sleep Health Program by K-SleepCare</span>
           </div>
 
           {/* Headline */}
@@ -96,8 +71,6 @@ const HeroSection = () => {
 
       {/* Bottom wave animation */}
       <BottomWave />
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
