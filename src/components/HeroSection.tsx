@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import familyIllustration from "@/assets/happy-family.png";
+import bayerLogo from "@/assets/bayer-logo.png";
 
 const BottomWave = () => {
   return (
@@ -32,12 +33,17 @@ const BottomWave = () => {
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-warm-gradient px-6 pt-8">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background px-6 pt-8">
+      {/* Bayer Logo */}
+      <div className="absolute top-6 left-6 animate-fade-up">
+        <img src={bayerLogo} alt="Bayer" className="h-12 w-auto" />
+      </div>
+
       {/* Decorative shapes */}
-      <div className="absolute top-20 left-[10%] w-24 h-24 rounded-full bg-warm-lavender animate-float opacity-50" />
-      <div className="absolute top-40 right-[15%] w-16 h-16 rounded-full bg-warm-coral animate-float delay-200 opacity-40" />
-      <div className="absolute bottom-32 left-[20%] w-20 h-20 rounded-full bg-warm-yellow animate-float delay-300 opacity-40" />
-      <div className="absolute bottom-48 right-[10%] w-12 h-12 rounded-full bg-warm-mint animate-float delay-100 opacity-50" />
+      <div className="absolute top-20 left-[10%] w-24 h-24 rounded-full bg-warm-lavender animate-float opacity-30" />
+      <div className="absolute top-40 right-[15%] w-16 h-16 rounded-full bg-warm-coral animate-float delay-200 opacity-25" />
+      <div className="absolute bottom-32 left-[20%] w-20 h-20 rounded-full bg-warm-yellow animate-float delay-300 opacity-25" />
+      <div className="absolute bottom-48 right-[10%] w-12 h-12 rounded-full bg-warm-mint animate-float delay-100 opacity-30" />
       
       {/* Main illustration */}
       <div className="animate-fade-up relative mb-4 w-full max-w-sm mx-auto">
@@ -51,7 +57,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-md mx-auto">
         {/* Badge */}
-        <div className="animate-fade-up delay-100 inline-flex items-center gap-2 bg-card rounded-full px-4 py-2 mb-5 soft-shadow">
+        <div className="animate-fade-up delay-100 inline-flex items-center gap-2 bg-muted rounded-full px-4 py-2 mb-5">
           <span className="text-sm font-medium text-foreground/80">Bayer 수면건강 프로그램</span>
         </div>
 
