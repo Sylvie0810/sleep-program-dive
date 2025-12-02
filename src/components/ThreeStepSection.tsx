@@ -15,7 +15,7 @@ const steps = [
     icon: Stethoscope,
     step: "2단계",
     title: "수면검사 + 코칭",
-    description: "체크 결과, 정밀 검사가 권장된 분 중",
+    description: "정밀 수면 검사가 권장된 분 중",
     subDescription: "선착순 신청 15분께 수면검사와 전문 코칭을 제공합니다. (비용 전액 회사 지원)",
     color: "bg-warm-blue/30",
     iconColor: "text-blue-500",
