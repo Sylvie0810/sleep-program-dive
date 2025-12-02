@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import sleepIllustration from "@/assets/sleep-illustration.png";
 
 const HeroSection = () => {
   return (
@@ -10,13 +11,13 @@ const HeroSection = () => {
       <div className="absolute bottom-32 left-[20%] w-20 h-20 rounded-full bg-warm-yellow animate-float delay-300 opacity-50" />
       <div className="absolute bottom-48 right-[10%] w-12 h-12 rounded-full bg-warm-peach animate-float delay-100 opacity-70" />
       
-      {/* Main illustration circle */}
-      <div className="animate-fade-up relative mb-8">
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-warm-circle flex items-center justify-center animate-pulse-soft">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-warm-peach/50 flex items-center justify-center">
-            <span className="text-6xl md:text-7xl">😴</span>
-          </div>
-        </div>
+      {/* Main illustration */}
+      <div className="animate-fade-up relative mb-6 w-full max-w-sm mx-auto">
+        <img 
+          src={sleepIllustration} 
+          alt="편안하게 잠자는 모습" 
+          className="w-full h-auto rounded-3xl"
+        />
       </div>
 
       {/* Content */}
