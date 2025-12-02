@@ -1,4 +1,5 @@
 import { ClipboardCheck, Stethoscope, MessageCircleHeart } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const steps = [
   {
@@ -72,6 +73,13 @@ const ThreeStepSection = () => {
         <p className="text-center text-sm text-muted-foreground mt-8">
           "모든 단계는 자율 참여이며, 결과는 오직 본인에게만 제공됩니다."
         </p>
+
+        {/* CTA Button */}
+        <div className="flex justify-center mt-8">
+          <Button variant="warm" size="lg" className="w-full sm:w-64 transition-transform duration-200 hover:scale-105">
+            수면건강 체크 시작하기
+          </Button>
+        </div>
       </div>
     </section>
   );
