@@ -61,7 +61,7 @@ const HeroSection = () => {
               수면건강 체크 시작하기
             </Button>
             <Link to="/sleep-strategy" className="w-full sm:w-56">
-              <Button variant="secondary" size="lg" className="w-full bg-warm-coral hover:bg-warm-coral/90 text-foreground/70 transition-transform duration-200 hover:scale-105">
+              <Button variant="secondary" size="lg" className="w-full bg-warm-coral hover:bg-warm-coral/90 text-white transition-transform duration-200 hover:scale-105">
                 24시간 수면 전략
               </Button>
             </Link>
