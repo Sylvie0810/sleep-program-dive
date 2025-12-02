@@ -55,11 +55,11 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="animate-fade-up delay-400 flex flex-col sm:flex-row gap-3 items-center lg:items-start">
+          <div className="animate-fade-up delay-400 flex flex-col sm:flex-row gap-3 items-center justify-center lg:justify-center">
             <Button 
               variant="warm" 
               size="lg" 
-              className="w-full sm:w-56 transition-transform duration-200 hover:scale-105"
+              className="w-full sm:w-52 transition-transform duration-200 hover:scale-105"
               onClick={() => document.getElementById('three-step-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
               프로그램 혜택
