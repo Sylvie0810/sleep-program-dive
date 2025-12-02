@@ -1,34 +1,36 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="relative overflow-hidden rounded-3xl sleep-gradient p-8 md:p-12 lg:p-16 text-center">
-          {/* Decorative Elements */}
-          <div className="absolute top-0 left-0 w-64 h-64 bg-primary-foreground/5 rounded-full -translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 right-0 w-48 h-48 bg-primary-foreground/5 rounded-full translate-x-1/4 translate-y-1/4" />
+        <div className="relative overflow-hidden rounded-3xl gradient-deep p-10 md:p-16 text-center max-w-4xl mx-auto">
+          {/* Decorative */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-sleep-light/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-sleep-glow/10 rounded-full blur-3xl" />
           
           <div className="relative z-10">
-            <div className="inline-flex items-center gap-2 bg-primary-foreground/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <Clock className="w-4 h-4 text-primary-foreground" />
-              <span className="text-sm font-medium text-primary-foreground">약 5분 소요</span>
+            <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-6">
+              <Sparkles className="w-4 h-4 text-sleep-glow" />
+              <span className="text-sm font-medium text-primary-foreground/90">지금 시작하세요</span>
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              수면은 더 나은 내일을 위한<br />
-              <span className="text-sleep-highlight">회복의 시간</span>입니다
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4 leading-tight">
+              '최고의 수면'을 통해
+              <br />
+              <span className="text-sleep-glow">'최고의 자신'</span>을 만들어가세요
             </h2>
             
-            <p className="text-primary-foreground/80 mb-8 max-w-lg mx-auto">
-              '최고의 수면'을 통해 '최고의 자신'을 만들어가시는<br className="hidden md:block" />
+            <p className="text-primary-foreground/70 mb-8 max-w-md mx-auto">
+              수면은 더 나은 내일을 위한 회복의 시간입니다.
+              <br />
               여러분의 여정을 응원합니다.
             </p>
             
             <Button 
               size="xl" 
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold shadow-lg"
+              className="bg-primary-foreground text-sleep-deep hover:bg-primary-foreground/90 font-bold shadow-xl"
             >
               수면건강 체크하고 혜택 받기
               <ArrowRight className="w-5 h-5" />

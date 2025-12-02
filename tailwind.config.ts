@@ -51,8 +51,11 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         sleep: {
+          deep: "hsl(var(--sleep-deep))",
+          mid: "hsl(var(--sleep-mid))",
+          light: "hsl(var(--sleep-light))",
           soft: "hsl(var(--sleep-soft))",
-          highlight: "hsl(var(--sleep-highlight))",
+          glow: "hsl(var(--sleep-glow))",
           calm: "hsl(var(--sleep-calm))",
         },
         sidebar: {
