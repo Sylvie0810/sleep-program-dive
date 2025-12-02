@@ -25,7 +25,7 @@ const RewardSection = () => {
         <div className="inline-flex items-center gap-2 bg-card rounded-full px-6 py-3 soft-shadow">
           <Gift className="w-5 h-5 text-primary" />
           <span className="text-sm font-medium text-foreground">
-            "올해의 마지막 커피, 회사가 드립니다 ☕"
+            "푹 자고, 더 활기찬 하루를 위한 커피 한 잔 ☕"
           </span>
         </div>
       </div>
