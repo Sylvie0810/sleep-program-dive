@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 import familyIllustration from "@/assets/happy-family.png";
 import bayerLogo from "@/assets/bayer-logo.png";
 
@@ -88,18 +89,24 @@ const HeroSection = () => {
             맞춤 솔루션을 받아보세요
           </p>
 
-          {/* CTA Button */}
-          <div className="animate-fade-up delay-400">
+          {/* CTA Buttons */}
+          <div className="animate-fade-up delay-400 flex flex-col sm:flex-row gap-2 items-center md:items-start">
             <Button variant="warm" size="lg" className="group">
               수면 체크 시작하기
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            
-            {/* Trust indicator */}
-            <p className="mt-3 text-xs text-muted-foreground">
-              ⏱️ 약 5분 소요 · 👥 57명 참여 완료
-            </p>
+            <Link to="/sleep-strategy">
+              <Button variant="outline" size="lg" className="group">
+                <BookOpen className="w-4 h-4" />
+                24시간 수면 전략
+              </Button>
+            </Link>
           </div>
+          
+          {/* Trust indicator */}
+          <p className="animate-fade-up delay-400 mt-3 text-xs text-muted-foreground">
+            ⏱️ 약 5분 소요 · 👥 57명 참여 완료
+          </p>
         </div>
       </div>
 
