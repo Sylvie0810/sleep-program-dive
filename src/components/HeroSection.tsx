@@ -5,26 +5,35 @@ import bayerLogo from "@/assets/bayer-logo.png";
 
 const BottomWave = () => {
   return (
-    <div className="absolute bottom-0 left-0 right-0 h-40 overflow-hidden">
+    <div className="absolute bottom-0 left-0 right-0 h-56 overflow-hidden">
       <svg 
         className="absolute bottom-0 w-full h-full"
-        viewBox="0 0 1440 200" 
+        viewBox="0 0 1440 280" 
         preserveAspectRatio="none"
       >
+        {/* 엄마 드레스 - 라벤더 */}
         <path
-          d="M0,100 C240,150 480,50 720,100 C960,150 1200,50 1440,100 L1440,200 L0,200 Z"
-          fill="hsl(var(--warm-lavender) / 0.25)"
+          d="M0,80 C240,140 480,20 720,80 C960,140 1200,20 1440,80 L1440,280 L0,280 Z"
+          fill="hsl(270 40% 85% / 0.35)"
           className="animate-wave"
         />
+        {/* 아빠 셔츠 - 블루 */}
         <path
-          d="M0,120 C240,80 480,160 720,120 C960,80 1200,160 1440,120 L1440,200 L0,200 Z"
-          fill="hsl(var(--warm-coral) / 0.15)"
+          d="M0,120 C240,60 480,180 720,120 C960,60 1200,180 1440,120 L1440,280 L0,280 Z"
+          fill="hsl(210 50% 80% / 0.3)"
           className="animate-wave-slow"
         />
+        {/* 아들 셔츠 - 코랄 */}
         <path
-          d="M0,140 C240,170 480,110 720,140 C960,170 1200,110 1440,140 L1440,200 L0,200 Z"
-          fill="hsl(var(--warm-yellow) / 0.2)"
+          d="M0,160 C240,200 480,120 720,160 C960,200 1200,120 1440,160 L1440,280 L0,280 Z"
+          fill="hsl(15 70% 75% / 0.25)"
           className="animate-wave-slower"
+        />
+        {/* 딸 원피스 - 옐로우 */}
+        <path
+          d="M0,200 C240,230 480,170 720,200 C960,230 1200,170 1440,200 L1440,280 L0,280 Z"
+          fill="hsl(55 70% 80% / 0.3)"
+          className="animate-wave-slowest"
         />
       </svg>
     </div>

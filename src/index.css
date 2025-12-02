@@ -125,15 +125,19 @@
   }
 
   .animate-wave {
-    animation: wave 8s ease-in-out infinite;
+    animation: wave 10s ease-in-out infinite;
   }
 
   .animate-wave-slow {
-    animation: wave 12s ease-in-out infinite reverse;
+    animation: wave 14s ease-in-out infinite reverse;
   }
 
   .animate-wave-slower {
-    animation: wave 16s ease-in-out infinite;
+    animation: wave 18s ease-in-out infinite;
+  }
+
+  .animate-wave-slowest {
+    animation: wave 22s ease-in-out infinite reverse;
   }
 
   .delay-100 { animation-delay: 0.1s; }
@@ -172,14 +176,17 @@
   0% { 
     transform: translateX(0) translateY(0);
   }
-  25% { 
-    transform: translateX(-15px) translateY(-8px);
+  20% { 
+    transform: translateX(-20px) translateY(-6px);
   }
-  50% { 
-    transform: translateX(0) translateY(5px);
+  40% { 
+    transform: translateX(10px) translateY(4px);
   }
-  75% { 
-    transform: translateX(15px) translateY(-5px);
+  60% { 
+    transform: translateX(-10px) translateY(-3px);
+  }
+  80% { 
+    transform: translateX(20px) translateY(5px);
   }
   100% { 
     transform: translateX(0) translateY(0);
