@@ -31,30 +31,29 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <span className="inline-block px-4 py-1.5 bg-sleep-soft rounded-full text-sm font-medium text-primary mb-4">
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-sm font-semibold text-primary mb-4">
             프로그램 혜택
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            당신의 수면을 위한<br />
+            당신의 수면을 위한
+            <br />
             <span className="text-primary">특별한 혜택</span>
           </h2>
           <p className="text-muted-foreground max-w-md mx-auto">
-            바이엘은 임직원 여러분의 건강한 수면을 위해 다양한 프로그램을 준비했습니다.
+            바이엘은 임직원 여러분의 건강한 수면을 위해
+            <br className="hidden sm:block" />
+            다양한 프로그램을 준비했습니다.
           </p>
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => (
-            <BenefitCard
-              key={index}
-              {...benefit}
-              className={index === 0 ? "md:col-span-2 lg:col-span-1" : ""}
-            />
+            <BenefitCard key={index} {...benefit} />
           ))}
         </div>
       </div>
