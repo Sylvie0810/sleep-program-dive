@@ -203,12 +203,7 @@ const SleepStrategy = () => {
         <div className="absolute bottom-8 left-[15%] w-16 h-16 rounded-full bg-warm-yellow animate-float delay-300 opacity-15" />
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="animate-fade-up inline-flex items-center gap-2 bg-muted rounded-full px-4 py-2 mb-4">
-            <Moon className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-foreground/80">SOOMi AI-수면코칭</span>
-          </div>
-          
-          <h1 className="animate-fade-up delay-100 text-2xl md:text-4xl font-bold text-foreground mb-4">
+          <h1 className="animate-fade-up text-2xl md:text-4xl font-bold text-foreground mb-4">
             🌙 깊은 잠·꿀잠
             <br />
             <span className="text-primary">24시간 전략</span>
