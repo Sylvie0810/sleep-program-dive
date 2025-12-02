@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Gowun Dodum', 'Noto Sans KR', 'sans-serif'],
+        sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -58,6 +58,7 @@ export default {
           mint: "hsl(var(--warm-mint))",
           yellow: "hsl(var(--warm-yellow))",
           orange: "hsl(var(--warm-orange))",
+          teal: "hsl(var(--warm-teal))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
