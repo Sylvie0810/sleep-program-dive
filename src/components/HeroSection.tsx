@@ -39,7 +39,7 @@ const HeroSection = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="animate-fade-up delay-200 text-3xl md:text-5xl font-normal text-foreground leading-tight mb-4" style={{ fontFamily: "'Nanum Pen Script', cursive" }}>
+          <h1 className="animate-fade-up delay-200 text-2xl md:text-4xl font-bold text-foreground leading-tight mb-4">
             한 해 동안 수고하셨습니다
           </h1>
           
