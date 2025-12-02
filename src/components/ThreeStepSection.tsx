@@ -32,7 +32,7 @@ const steps = [
 
 const ThreeStepSection = () => {
   return (
-    <section className="py-12 md:py-16 px-4 md:px-6 bg-background">
+    <section id="three-step-section" className="py-12 md:py-16 px-4 md:px-6 bg-background">
       <div className="max-w-4xl mx-auto">
         {/* Headline */}
         <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-3">
