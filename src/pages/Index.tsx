@@ -10,9 +10,9 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       <HeroSection />
+      <RecoveryMotivationSection />
       <ProgramIntroSection />
       <ThreeStepSection />
-      <RecoveryMotivationSection />
       <RewardSection />
       <PrivacySection />
       <CTASection />
