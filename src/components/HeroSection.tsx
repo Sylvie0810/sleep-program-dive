@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import sleepIllustration from "@/assets/sleep-illustration.png";
+import familyIllustration from "@/assets/happy-family.png";
 
 const BottomWave = () => {
   return (
@@ -10,22 +10,19 @@ const BottomWave = () => {
         viewBox="0 0 1440 200" 
         preserveAspectRatio="none"
       >
-        {/* Deep sleep wave */}
         <path
           d="M0,100 C240,150 480,50 720,100 C960,150 1200,50 1440,100 L1440,200 L0,200 Z"
-          fill="hsl(var(--sleep-deep) / 0.15)"
+          fill="hsl(var(--warm-lavender) / 0.25)"
           className="animate-wave"
         />
-        {/* REM sleep wave */}
         <path
           d="M0,120 C240,80 480,160 720,120 C960,80 1200,160 1440,120 L1440,200 L0,200 Z"
-          fill="hsl(var(--sleep-rem) / 0.12)"
+          fill="hsl(var(--warm-coral) / 0.15)"
           className="animate-wave-slow"
         />
-        {/* Light sleep wave */}
         <path
           d="M0,140 C240,170 480,110 720,140 C960,170 1200,110 1440,140 L1440,200 L0,200 Z"
-          fill="hsl(var(--sleep-light) / 0.1)"
+          fill="hsl(var(--warm-yellow) / 0.2)"
           className="animate-wave-slower"
         />
       </svg>
@@ -35,39 +32,39 @@ const BottomWave = () => {
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-warm-gradient px-6">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-warm-gradient px-6 pt-8">
       {/* Decorative shapes */}
-      <div className="absolute top-20 left-[10%] w-24 h-24 rounded-full bg-warm-lavender animate-float opacity-40" />
-      <div className="absolute top-40 right-[15%] w-16 h-16 rounded-full bg-warm-mint animate-float delay-200 opacity-40" />
-      <div className="absolute bottom-32 left-[20%] w-20 h-20 rounded-full bg-warm-yellow animate-float delay-300 opacity-30" />
-      <div className="absolute bottom-48 right-[10%] w-12 h-12 rounded-full bg-warm-peach animate-float delay-100 opacity-50" />
+      <div className="absolute top-20 left-[10%] w-24 h-24 rounded-full bg-warm-lavender animate-float opacity-50" />
+      <div className="absolute top-40 right-[15%] w-16 h-16 rounded-full bg-warm-coral animate-float delay-200 opacity-40" />
+      <div className="absolute bottom-32 left-[20%] w-20 h-20 rounded-full bg-warm-yellow animate-float delay-300 opacity-40" />
+      <div className="absolute bottom-48 right-[10%] w-12 h-12 rounded-full bg-warm-mint animate-float delay-100 opacity-50" />
       
       {/* Main illustration */}
-      <div className="animate-fade-up relative mb-6 w-full max-w-xs mx-auto">
+      <div className="animate-fade-up relative mb-4 w-full max-w-sm mx-auto">
         <img 
-          src={sleepIllustration} 
-          alt="편안하게 잠자는 모습" 
-          className="w-full h-auto rounded-3xl"
+          src={familyIllustration} 
+          alt="행복한 가족" 
+          className="w-full h-auto"
         />
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-md mx-auto">
         {/* Badge */}
-        <div className="animate-fade-up delay-100 inline-flex items-center gap-2 bg-card rounded-full px-4 py-2 mb-6 soft-shadow">
+        <div className="animate-fade-up delay-100 inline-flex items-center gap-2 bg-card rounded-full px-4 py-2 mb-5 soft-shadow">
           <span className="text-sm font-medium text-foreground/80">Bayer 수면건강 프로그램</span>
         </div>
 
         {/* Headline */}
         <h1 className="animate-fade-up delay-200 text-3xl md:text-4xl font-bold text-foreground leading-tight mb-4">
-          더 나은 내일을 위한
+          온 가족의 건강한
           <br />
-          <span className="text-primary">숙면의 시작</span>
+          <span className="text-primary">숙면을 위한 첫걸음</span>
         </h1>
 
         {/* Subheadline */}
         <p className="animate-fade-up delay-300 text-base text-muted-foreground mb-8 leading-relaxed">
-          5분 체크만으로 나의 수면 상태를 확인하고
+          5분 체크만으로 우리 가족 수면 상태를 확인하고
           <br />
           맞춤 솔루션을 무료로 받아보세요
         </p>
@@ -86,7 +83,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Bottom sleep wave animation */}
+      {/* Bottom wave animation */}
       <BottomWave />
     </section>
   );

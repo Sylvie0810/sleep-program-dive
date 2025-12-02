@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 20% 20%;
 
-    --primary: 230 45% 55%;
+    --primary: 270 45% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 230 30% 95%;
-    --secondary-foreground: 230 30% 25%;
+    --secondary: 270 25% 95%;
+    --secondary-foreground: 270 30% 25%;
 
-    --muted: 230 20% 94%;
-    --muted-foreground: 230 15% 45%;
+    --muted: 270 15% 94%;
+    --muted-foreground: 270 10% 45%;
 
-    --accent: 230 35% 70%;
+    --accent: 15 70% 65%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,19 +32,19 @@
 
     --border: 30 20% 90%;
     --input: 30 20% 90%;
-    --ring: 230 45% 55%;
+    --ring: 270 45% 60%;
 
     --radius: 1.5rem;
 
-    /* Warm blue-purple palette */
-    --warm-cream: 230 25% 97%;
-    --warm-peach: 230 30% 92%;
-    --warm-coral: 230 35% 70%;
-    --warm-lavender: 230 30% 85%;
-    --warm-mint: 220 25% 90%;
-    --warm-yellow: 45 50% 88%;
-    --warm-orange: 25 60% 75%;
-    --warm-teal: 230 45% 55%;
+    /* Warm palette matching family illustration */
+    --warm-cream: 40 30% 97%;
+    --warm-peach: 15 50% 92%;
+    --warm-coral: 15 70% 70%;
+    --warm-lavender: 270 40% 85%;
+    --warm-mint: 200 30% 88%;
+    --warm-yellow: 55 70% 80%;
+    --warm-orange: 25 70% 65%;
+    --warm-teal: 270 45% 60%;
 
     /* Sleep cycle colors */
     --sleep-deep: 230 45% 50%;
