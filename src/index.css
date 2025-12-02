@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 20% 20%;
 
-    --primary: 160 60% 45%;
+    --primary: 250 50% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 60% 95%;
-    --secondary-foreground: 240 20% 25%;
+    --secondary: 250 30% 95%;
+    --secondary-foreground: 250 30% 25%;
 
-    --muted: 30 30% 94%;
-    --muted-foreground: 240 10% 45%;
+    --muted: 250 20% 94%;
+    --muted-foreground: 250 15% 45%;
 
-    --accent: 350 70% 65%;
+    --accent: 250 40% 70%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,19 +32,19 @@
 
     --border: 30 20% 90%;
     --input: 30 20% 90%;
-    --ring: 160 60% 45%;
+    --ring: 250 50% 55%;
 
     --radius: 1.5rem;
 
-    /* Warm color palette */
-    --warm-cream: 40 40% 96%;
-    --warm-peach: 350 60% 90%;
-    --warm-coral: 350 70% 65%;
-    --warm-lavender: 270 40% 85%;
-    --warm-mint: 160 60% 75%;
-    --warm-yellow: 45 90% 75%;
-    --warm-orange: 25 90% 60%;
-    --warm-teal: 160 60% 45%;
+    /* Soft lavender palette matching illustration */
+    --warm-cream: 40 30% 97%;
+    --warm-peach: 250 30% 92%;
+    --warm-coral: 250 40% 70%;
+    --warm-lavender: 250 35% 85%;
+    --warm-mint: 250 25% 90%;
+    --warm-yellow: 45 60% 85%;
+    --warm-orange: 25 70% 70%;
+    --warm-teal: 250 50% 55%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
