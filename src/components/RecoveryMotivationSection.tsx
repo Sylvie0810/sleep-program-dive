@@ -51,6 +51,11 @@ const RecoveryMotivationSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Survey Caption */}
+        <p className="text-xs text-muted-foreground mt-6">
+          2025년 12월 2일 하루 간 설문 완료하신 57분의 의견
+        </p>
       </div>
     </section>
   );
