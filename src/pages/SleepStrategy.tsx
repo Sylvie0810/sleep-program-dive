@@ -23,26 +23,24 @@ const TimeBlock = ({
     className="animate-fade-up bg-card rounded-2xl p-5 soft-shadow border border-border/50"
     style={{ animationDelay: `${delay}ms` }}
   >
-    <div className="flex items-start gap-4">
-      <div className={`w-12 h-12 ${colorClass} rounded-xl flex items-center justify-center flex-shrink-0`}>
-        <Icon className="w-6 h-6 text-foreground/70" />
+    <div className="flex items-center gap-3 mb-3">
+      <div className={`w-10 h-10 ${colorClass} rounded-xl flex items-center justify-center flex-shrink-0`}>
+        <Icon className="w-5 h-5 text-foreground/70" />
       </div>
-      <div className="flex-1">
-        <div className="flex items-center gap-2 mb-1">
-          <span className="text-xs font-medium text-muted-foreground">{time}</span>
-        </div>
-        <h3 className="font-bold text-foreground mb-1">{title}</h3>
-        <p className="text-xs text-primary font-medium mb-3">{purpose}</p>
-        <ul className="space-y-2">
-          {items.map((item, idx) => (
-            <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
+      <div>
+        <span className="text-xs font-medium text-muted-foreground">{time}</span>
+        <h3 className="font-bold text-foreground text-sm">{title}</h3>
       </div>
     </div>
+    <p className="text-xs text-primary font-medium mb-2">{purpose}</p>
+    <ul className="space-y-1">
+      {items.map((item, idx) => (
+        <li key={idx} className="text-xs text-muted-foreground flex items-start gap-1.5">
+          <span className="text-primary mt-0.5">•</span>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
   </div>
 );
 
@@ -51,61 +49,57 @@ const SleepStrategy = () => {
     {
       time: "기상 직후 0-30분",
       title: "리듬 스위치 켜기",
-      purpose: "코르티솔 각성 반응 정상화 → 하루 에너지 안정화",
+      purpose: "코르티솔 각성 → 하루 에너지 안정화",
       icon: Sunrise,
       colorClass: "bg-warm-yellow",
       items: [
-        "기상 직후 5분 안에 커튼 열기 - 자연광은 하루 리듬의 시작 신호",
-        "침대에서 바로 일어나기 - 뒤척이며 누워있으면 생체시계가 흐려집니다",
-        "가벼운 물 한 컵 - 밤새 떨어진 혈류와 체온을 회복",
-        "10분의 가벼운 움직임 - 스트레칭, 창문 열기, 간단한 집안 정리"
+        "기상 직후 5분 안에 커튼 열기",
+        "침대에서 바로 일어나기",
+        "가벼운 물 한 컵"
       ]
     },
     {
       time: "기상 후 1시간 이내",
       title: "첫 번째 안정 구간",
-      purpose: "뇌의 각성 시스템을 부드럽게 켜기",
+      purpose: "뇌의 각성 시스템 부드럽게 켜기",
       icon: Coffee,
       colorClass: "bg-warm-coral/40",
       items: [
-        "카페인은 기상 후 60~90분 이후에 마시기",
-        "단순 탄수화물 아침은 피하고 단백질 포함"
+        "카페인은 기상 후 60~90분 이후에",
+        "단백질 포함 아침 식사"
       ]
     },
     {
-      time: "오전 (기상 후 1~4시간)",
+      time: "오전",
       title: "'깊은 잠'의 바탕 만들기",
-      purpose: "낮 동안 졸림 억제 → 밤 수면 압력 증가",
+      purpose: "낮 졸림 억제 → 밤 수면 압력 증가",
       icon: Sun,
       colorClass: "bg-warm-yellow",
       items: [
-        "햇빛 20-30분 - 밤 멜라토닌의 질을 결정",
-        "빠른 걸음 10-20분 - 밤 수면 압력을 높임",
-        "집중 업무는 오전에 배치 - 뇌가 가장 효율적인 시간"
+        "햇빛 20-30분",
+        "빠른 걸음 10-20분"
       ]
     },
     {
-      time: "오후 (기상 후 4~10시간)",
+      time: "오후",
       title: "낮 피로 관리",
       purpose: "저녁 각성도 과도 상승 방지",
       icon: Clock,
       colorClass: "bg-warm-mint",
       items: [
         "카페인은 기상 후 6시간 이후 금지",
-        "15~20분 짧은 낮잠 가능 (오후 3시 이전)",
-        "3~5분의 미니 휴식을 자주 - 과각성 상태 감소"
+        "15~20분 짧은 낮잠 (오후 3시 이전)"
       ]
     },
     {
-      time: "오후~저녁 (기상 후 8~12시간)",
+      time: "오후~저녁",
       title: "회복 모드로 전환",
-      purpose: "교감신경(각성) → 부교감신경(안정) 전환",
+      purpose: "교감신경 → 부교감신경 전환",
       icon: Sunset,
       colorClass: "bg-warm-coral/40",
       items: [
-        "저녁 운동은 기상 후 8-10시간 사이가 가장 좋음",
-        "운동은 너무 강하지 않게 - 격한 운동은 잠을 늦춤",
-        "저녁 식사는 자기 전 3시간 전에 마무리"
+        "저녁 운동은 기상 후 8-10시간 사이",
+        "저녁 식사는 취침 3시간 전 마무리"
       ]
     },
     {
@@ -115,21 +109,19 @@ const SleepStrategy = () => {
       icon: Thermometer,
       colorClass: "bg-warm-lavender/60",
       items: [
-        "샤워는 자기 전 1.5~2시간에 끝내기",
-        "밝은 화면·자극적 콘텐츠 최소화",
-        "조명은 따뜻한 색으로 낮추기"
+        "샤워는 취침 1.5~2시간 전",
+        "조명은 따뜻한 색으로"
       ]
     },
     {
       time: "취침 1시간 전",
-      title: "전환 루틴 (Transition Routine)",
-      purpose: "뇌가 '이제 안전하다 → 내려가자'라고 느끼게 만들기",
+      title: "전환 루틴",
+      purpose: "뇌가 '안전하다 → 내려가자' 느끼게",
       icon: Wind,
       colorClass: "bg-warm-mint",
       items: [
-        "아직 침대에 가지 말기",
-        "가능한 행동: 조용한 정리, 가벼운 스트레칭, 따뜻한 허브티, 명상 5분",
-        "피해야 하는 행동: 과식, 강한 대화, 업무 마무리, 자극적 콘텐츠"
+        "가벼운 스트레칭, 명상 5분",
+        "과식, 업무, 자극적 콘텐츠 피하기"
       ]
     },
     {
@@ -139,45 +131,41 @@ const SleepStrategy = () => {
       icon: Eye,
       colorClass: "bg-warm-lavender/60",
       items: [
-        "전등 30~40% 밝기로 조절",
-        "침실 온도 18-20℃ 조정",
-        "침대는 오직 잠과 휴식을 위한 공간으로"
+        "침실 온도 18-20℃",
+        "침대는 오직 잠과 휴식만"
       ]
     },
     {
       time: "잠자기 직전",
       title: "뇌를 그대로 내려놓기",
-      purpose: "잠들기까지 걸리는 시간 줄이기",
+      purpose: "잠들기까지 시간 줄이기",
       icon: Moon,
       colorClass: "bg-sleep-deep/30",
       items: [
-        "4-7-8 호흡 또는 6초 들숨·6초 날숨",
-        "구강호흡이 있다면 코 확보 필수",
-        "스스로를 잠들게 하려 하지 않기"
+        "4-7-8 호흡법",
+        "잠들려 애쓰지 않기"
       ]
     },
     {
       time: "수면 중",
-      title: "깊은 잠을 유지하는 조건",
-      purpose: "수면 단계가 끊기지 않도록 하기",
+      title: "깊은 잠 유지 조건",
+      purpose: "수면 단계 끊기지 않도록",
       icon: Bed,
       colorClass: "bg-sleep-rem/30",
       items: [
-        "실내 온도 일정 유지, 빛·소음 최소화",
-        "구강호흡 방지 (습도·코막힘 관리)",
-        "야간 화장실 횟수 줄이기 - 자기 2시간 전 물 섭취 중단"
+        "실내 온도 일정, 빛·소음 최소화",
+        "야간 화장실 줄이기 (취침 2시간 전 물 중단)"
       ]
     },
     {
       time: "기상 직후 (다음 날)",
-      title: "다음 날의 와해를 막는 루틴",
-      purpose: "생체시계가 매일 같은 위치에서 시작되게 하기",
+      title: "다음 날 와해 방지",
+      purpose: "생체시계 매일 같은 위치에서 시작",
       icon: Sunrise,
       colorClass: "bg-warm-yellow",
       items: [
         "기상 시간 고정 (주말 포함)",
-        "바로 햇빛 보기",
-        "침대에서 오래 머물지 않기"
+        "바로 햇빛 보기"
       ]
     }
   ];
