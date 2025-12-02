@@ -57,11 +57,11 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="animate-fade-up delay-400 flex flex-col sm:flex-row gap-3 items-center lg:items-start">
-            <Button variant="warm" size="lg" className="w-full sm:w-56">
+            <Button variant="warm" size="lg" className="w-full sm:w-56 transition-transform duration-200 hover:scale-105">
               수면건강 체크 시작하기
             </Button>
             <Link to="/sleep-strategy" className="w-full sm:w-56">
-              <Button variant="secondary" size="lg" className="w-full bg-warm-peach/70 hover:bg-warm-peach/85 text-foreground">
+              <Button variant="secondary" size="lg" className="w-full bg-warm-peach/90 hover:bg-warm-peach text-foreground transition-transform duration-200 hover:scale-105">
                 24시간 수면 전략
               </Button>
             </Link>
