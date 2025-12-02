@@ -32,22 +32,22 @@ const steps = [
 
 const ThreeStepSection = () => {
   return (
-    <section className="py-16 px-6 bg-background">
+    <section className="py-12 md:py-16 px-4 md:px-6 bg-background">
       <div className="max-w-4xl mx-auto">
         {/* Headline */}
         <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-3">
           "당신의 밤을 바꾸는 3단계 회복 루틴"
         </h2>
-        <p className="text-sm text-muted-foreground text-center mb-10">
+        <p className="text-sm text-muted-foreground text-center mb-8 md:mb-10">
           나를 위한 수면 회복 프로그램
         </p>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {steps.map((step, index) => (
             <div
               key={index}
-              className={`${step.color} rounded-2xl p-6 text-center transition-transform hover:scale-105`}
+              className={`${step.color} rounded-2xl p-5 md:p-6 text-center transition-transform hover:scale-105`}
             >
               <div className="w-14 h-14 bg-card rounded-full flex items-center justify-center mx-auto mb-4 soft-shadow">
                 <step.icon className={`w-7 h-7 ${step.iconColor}`} />
