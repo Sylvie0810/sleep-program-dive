@@ -2,43 +2,34 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import sleepIllustration from "@/assets/sleep-illustration.png";
 
-const SleepCycleWave = () => {
+const BottomWave = () => {
   return (
-    <svg 
-      className="absolute inset-0 w-full h-full opacity-30"
-      viewBox="0 0 400 300" 
-      preserveAspectRatio="xMidYMid slice"
-    >
-      {/* Deep sleep wave */}
-      <path
-        d="M0,150 Q50,120 100,180 T200,140 T300,190 T400,150"
-        fill="none"
-        stroke="hsl(var(--sleep-deep))"
-        strokeWidth="3"
-        className="animate-sleep-wave"
-        strokeLinecap="round"
-      />
-      {/* REM sleep wave */}
-      <path
-        d="M0,130 Q50,160 100,110 T200,150 T300,100 T400,140"
-        fill="none"
-        stroke="hsl(var(--sleep-rem))"
-        strokeWidth="2"
-        className="animate-sleep-wave-reverse"
-        strokeLinecap="round"
-        strokeDasharray="8 4"
-      />
-      {/* Light sleep wave */}
-      <path
-        d="M0,170 Q50,140 100,160 T200,130 T300,170 T400,145"
-        fill="none"
-        stroke="hsl(var(--sleep-light))"
-        strokeWidth="2"
-        className="animate-sleep-wave-slow"
-        strokeLinecap="round"
-        opacity="0.7"
-      />
-    </svg>
+    <div className="absolute bottom-0 left-0 right-0 h-40 overflow-hidden">
+      <svg 
+        className="absolute bottom-0 w-full h-full"
+        viewBox="0 0 1440 200" 
+        preserveAspectRatio="none"
+      >
+        {/* Deep sleep wave */}
+        <path
+          d="M0,100 C240,150 480,50 720,100 C960,150 1200,50 1440,100 L1440,200 L0,200 Z"
+          fill="hsl(var(--sleep-deep) / 0.15)"
+          className="animate-wave"
+        />
+        {/* REM sleep wave */}
+        <path
+          d="M0,120 C240,80 480,160 720,120 C960,80 1200,160 1440,120 L1440,200 L0,200 Z"
+          fill="hsl(var(--sleep-rem) / 0.12)"
+          className="animate-wave-slow"
+        />
+        {/* Light sleep wave */}
+        <path
+          d="M0,140 C240,170 480,110 720,140 C960,170 1200,110 1440,140 L1440,200 L0,200 Z"
+          fill="hsl(var(--sleep-light) / 0.1)"
+          className="animate-wave-slower"
+        />
+      </svg>
+    </div>
   );
 };
 
@@ -51,13 +42,12 @@ const HeroSection = () => {
       <div className="absolute bottom-32 left-[20%] w-20 h-20 rounded-full bg-warm-yellow animate-float delay-300 opacity-30" />
       <div className="absolute bottom-48 right-[10%] w-12 h-12 rounded-full bg-warm-peach animate-float delay-100 opacity-50" />
       
-      {/* Main illustration with sleep cycle animation */}
+      {/* Main illustration */}
       <div className="animate-fade-up relative mb-6 w-full max-w-xs mx-auto">
-        <SleepCycleWave />
         <img 
           src={sleepIllustration} 
           alt="편안하게 잠자는 모습" 
-          className="w-full h-auto rounded-3xl relative z-10"
+          className="w-full h-auto rounded-3xl"
         />
       </div>
 
@@ -96,8 +86,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Bottom decoration */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-warm-peach/20 to-transparent" />
+      {/* Bottom sleep wave animation */}
+      <BottomWave />
     </section>
   );
 };
