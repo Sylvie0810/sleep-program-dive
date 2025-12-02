@@ -62,7 +62,7 @@ const RecoveryMotivationSection = () => {
         {/* CTA Button */}
         <div className="flex justify-center mt-8">
           <Link to="/sleep-strategy">
-            <Button variant="secondary" size="lg" className="w-full sm:w-52 bg-warm-coral hover:bg-warm-coral/90 text-white transition-transform duration-200 hover:scale-105">
+            <Button variant="secondary" size="lg" className="w-full sm:w-60 bg-warm-coral hover:bg-warm-coral/90 text-white transition-transform duration-200 hover:scale-105">
               24시간 수면 전략
             </Button>
           </Link>
