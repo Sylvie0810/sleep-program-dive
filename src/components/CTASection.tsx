@@ -19,7 +19,7 @@ const CTASection = () => {
         </p>
         
         {/* CTA Button */}
-        <Button variant="warm" size="lg" className="w-full sm:w-56 transition-transform duration-200 hover:scale-105 mb-8">
+        <Button variant="warm" size="lg" className="w-full sm:w-52 transition-transform duration-200 hover:scale-105 mb-8">
           수면건강 체크 시작하기
         </Button>
 

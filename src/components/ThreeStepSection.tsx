@@ -76,7 +76,7 @@ const ThreeStepSection = () => {
 
         {/* CTA Button */}
         <div className="flex justify-center mt-8">
-          <Button variant="warm" size="lg" className="w-full sm:w-64 transition-transform duration-200 hover:scale-105">
+          <Button variant="warm" size="lg" className="w-full sm:w-56 transition-transform duration-200 hover:scale-105">
             수면건강 체크 시작하기
           </Button>
         </div>
