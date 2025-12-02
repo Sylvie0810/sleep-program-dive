@@ -34,7 +34,7 @@ const HeroSection = () => {
         {/* Content */}
         <div className="relative z-10 text-center lg:text-left flex-1 max-w-xl">
           {/* Badge */}
-          <div className="animate-fade-up delay-100 inline-flex items-center gap-2 bg-white border-2 border-[#10857F] rounded-full px-3 py-1.5 mb-4">
+          <div className="animate-fade-up delay-100 inline-flex items-center gap-2 bg-warm-mint/50 rounded-full px-3 py-1.5 mb-4">
             <span className="text-xs font-medium text-foreground/80">Bayer Sleep Health Program by K-SleepCare</span>
           </div>
 
