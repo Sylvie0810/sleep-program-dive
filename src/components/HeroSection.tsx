@@ -57,8 +57,13 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="animate-fade-up delay-400 flex flex-col sm:flex-row gap-3 items-center lg:items-start">
-            <Button variant="warm" size="lg" className="w-full sm:w-56 transition-transform duration-200 hover:scale-105">
-              수면건강 체크 시작하기
+            <Button 
+              variant="warm" 
+              size="lg" 
+              className="w-full sm:w-56 transition-transform duration-200 hover:scale-105"
+              onClick={() => document.getElementById('three-step-section')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              프로그램 혜택
             </Button>
             <Link to="/sleep-strategy" className="w-full sm:w-56">
               <Button variant="secondary" size="lg" className="w-full bg-warm-coral hover:bg-warm-coral/90 text-white transition-transform duration-200 hover:scale-105">
