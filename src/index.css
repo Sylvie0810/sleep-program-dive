@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Square+Round:wght@400;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 @layer base {
   :root {
@@ -91,7 +91,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'NanumSquareRound', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   }
 }
 
