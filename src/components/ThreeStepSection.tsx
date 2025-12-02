@@ -58,10 +58,10 @@ const ThreeStepSection = () => {
               <h3 className="text-lg font-bold text-foreground mt-1 mb-3">
                 {step.title}
               </h3>
-              <p className="text-sm text-foreground/80 leading-relaxed">
+              <p className="text-sm text-foreground/80 leading-relaxed break-keep">
                 {step.description}
               </p>
-              <p className="text-sm text-muted-foreground mt-1">
+              <p className="text-sm text-muted-foreground mt-1 break-keep">
                 {step.subDescription}
               </p>
             </div>
