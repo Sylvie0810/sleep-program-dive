@@ -6,10 +6,10 @@ const CTASection = () => {
     <section className="py-16 md:py-20 px-4 md:px-6 bg-warm-gradient">
       <div className="max-w-lg mx-auto text-center">
         {/* Emotional copy */}
-        <p className="text-lg md:text-xl font-bold text-foreground leading-relaxed mb-6">
-          올해의 피로를 내려놓고,
+        <p className="text-xl md:text-2xl font-bold text-foreground leading-relaxed mb-6">
+          "올해의 피로를 내려놓고,
           <br />
-          내일의 컨디션을 회복하세요.
+          내일의 컨디션을 회복하세요."
         </p>
         
         <p className="text-sm md:text-base text-muted-foreground mb-8">
