@@ -69,8 +69,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Bottom wave animation */}
-      <BottomWave />
+      {/* Bottom wave animation - removed */}
     </section>;
 };
 export default HeroSection;
